@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 文本溢出换行 */
+.gameName.data-v-1d02e32e {
+	width: 124rpx;
+	line-height: 30rpx;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre-line;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.scrollImg.data-v-1d02e32e {
+	width: 124rpx;
+	height: 124rpx;
+	border-radius: 18rpx;
+}
+

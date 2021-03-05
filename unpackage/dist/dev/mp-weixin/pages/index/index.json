@@ -1,0 +1,9 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "card": "/components/common/card",
+    "divider": "/components/common/divider",
+    "scroll-app-list": "/components/common/scrollAppList",
+    "app-list": "/components/common/appList"
+  }
+}

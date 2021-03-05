@@ -1,0 +1,189 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"enablePullDownRefresh": true,
+			"app-plus": {
+				"scrollIndicator": "none",
+				"titleNView": {
+					"searchInput": {
+						"align": "left",
+						"backgroundColor": "#ffffff",
+						"borderRadius": "25px",
+						"disabled": true,
+						"placeholder": "搜索游戏",
+						"placeholderColor": "#CCCCCC"
+					},
+					"buttons": [{
+							"color": "#ffffff",
+							"colorPressed": "#989898",
+							"float": "left",
+							"fontSize": "22px",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"text": "\ue623"
+						},
+						{
+							"color": "#ffffff",
+							"colorPressed": "#989898",
+							"float": "right",
+							"fontSize": "22px",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"text": "\ue612"
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"path": "pages/my/my",
+		// 去掉uni默认头部
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/sponsor/sponsor",
+		"style": {}
+	}, {
+		"path": "pages/myGame/myGame",
+		"style": {
+			"navigationBarTitleText": "我的游戏"
+		}
+	}, {
+		"path": "pages/fight/fight",
+		"style": {
+			"app-plus": {
+				"scrollIndicator": "none",
+				"titleNView": {
+					"searchInput": {
+						"align": "left",
+						"backgroundColor": "#ffffff",
+						"borderRadius": "25px",
+						"disabled": true,
+						"placeholder": "搜索游戏",
+						"placeholderColor": "#CCCCCC"
+					},
+					"buttons": [{
+							"color": "#ffffff",
+							"colorPressed": "#989898",
+							"float": "left",
+							"fontSize": "22px",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"text": "\ue623"
+						},
+						{
+							"color": "#ffffff",
+							"colorPressed": "#989898",
+							"float": "right",
+							"fontSize": "22px",
+							"fontSrc": "/static/font/iconfont.ttf",
+							"text": "\ue612"
+						}
+					]
+				}
+			}
+		}
+	}, {
+		"path": "pages/message/message",
+		"style": {
+			"navigationBarTitleText": "消息中心"
+		}
+	}, {
+		"path": "pages/down/down",
+		"style": {
+			"navigationBarTitleText": "下载任务"
+		}
+	}, {
+		"path": "pages/search/search",
+		"style": {
+			"app-plus": {
+				"scrollIndicator": "none",
+				"titleNView": {
+					"searchInput": {
+						"align": "left",
+						"backgroundColor": "#F7F7F7",
+						"borderRadius": "25px",
+						"disabled": false,
+						"autoFocus": true,
+						"placeholder": "搜索游戏",
+						"placeholderColor": "#CCCCCC"
+					},
+					"buttons": [{
+						"color": "#CCCCCC",
+						"colorPressed": "#989898",
+						"float": "right",
+						"fontSize": "28rpx",
+						"text": "搜索"
+					}]
+				}
+			}
+		}
+	}, {
+		"path": "pages/gameDetails/gameDetails",
+		"style": {
+			"navigationStyle": "custom",
+			"scrollIndicator": "none"
+		}
+	}, {
+		"path": "pages/gameType/gameType",
+		"style": {}
+	}, {
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarTitleText": "登陆"
+		}
+	}    ,{
+            "path" : "pages/setting/setting",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/gameClass/gameClass",
+            "style" : {
+				"navigationBarTitleText": "游戏分类"
+			}
+        }
+    ],
+	// 全局配置
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "小J游戏",
+		"navigationBarBackgroundColor": "#4D9AE4",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#B5B5B5",
+		"selectedColor": "#1296db",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "找游戏",
+				"iconPath": "static/tabbar/search.png",
+				"selectedIconPath": "static/tabbar/searchSelected.png"
+			},
+			{
+				"pagePath": "pages/fight/fight",
+				"text": "对战",
+				"iconPath": "static/tabbar/duizhan.png",
+				"selectedIconPath": "static/tabbar/duizhanSeleted.png"
+			},
+			{
+				"pagePath": "pages/myGame/myGame",
+				"text": "我的游戏",
+				"iconPath": "static/tabbar/myGame.png",
+				"selectedIconPath": "static/tabbar/myGameSelected.png"
+			},
+			{
+				"pagePath": "pages/sponsor/sponsor",
+				"text": "赞助",
+				"iconPath": "static/tabbar/zanzhu.png",
+				"selectedIconPath": "static/tabbar/zanzhuSelected.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "管理",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/mySelected.png"
+			}
+		]
+	}
+}

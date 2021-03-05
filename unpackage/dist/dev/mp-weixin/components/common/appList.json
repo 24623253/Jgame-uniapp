@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "divider": "/components/common/divider"
+  },
+  "component": true
+}

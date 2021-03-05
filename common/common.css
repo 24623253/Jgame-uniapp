@@ -1,0 +1,51 @@
+/* #ifndef APP-NVUE */
+/* 设置全局样式 */
+/* (1) 页面高度100%,默认字体28upx,默认行高1.8,背景颜色 */
+page{
+	height: 100%;
+	font-size: 28upx;
+	line-height: 1.8;
+	background: #FFFFFF;
+}
+/* (2) 图片默认100%宽度 will-change: transform;解决闪烁问题 */
+image{  width: 100%; will-change: transform; }
+::-webkit-scrollbar{
+	display: none;
+}
+
+/* 按钮 */
+.downBtn{
+	color: #F1F1F1;
+	border-radius: 40rpx;
+	width: 135rpx;
+	text-align: center;
+}
+
+/* 横向滚动,防止宽度过多溢出导致窗口抖动 */
+.scrollIndex {
+	width: 750rpx;
+	overflow: hidden;
+	scroll-y: auto;
+}
+
+/* #endif */
+/* 主色调 */
+/* 主背景颜色（蓝色）*/
+.main-bg-color{ background-color: #4D9AE4; }
+/* 主背景颜色（淡黄色）*/
+.main-bg-color1{ background-color: #F4522F; }
+/* 主背景颜色（白色）*/
+.bg-color-white{ background-color: #FFFFFF; }
+/* 主点击背景颜色（淡蓝色）*/
+.main-bg-hover-color{ background-color: rgba(253,104,1,0.85); }
+/* 主字体颜色（蓝色）*/
+.main-text-color{color: #4D9AE4;}
+/* 主字体颜色（白色）*/
+.text-white{color: #FFFFFF;}
+/* 主边框颜色 */
+.main-border-color{ border-color: #F1F1F1; }
+
+.input-border-color{
+	border-color: #0193E0;
+}
+

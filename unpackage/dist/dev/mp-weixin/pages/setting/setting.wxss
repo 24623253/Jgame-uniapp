@@ -1,0 +1,9 @@
+
+.footDownBtn{
+	background-color:  #0193E0;
+	height: 70rpx;
+	line-height: 70rpx;
+	color: #FFFFFF;
+	border-radius: 10rpx;
+}
+

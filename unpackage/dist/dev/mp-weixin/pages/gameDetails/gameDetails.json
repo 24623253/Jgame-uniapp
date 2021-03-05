@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "scrollIndicator": "none",
+  "usingComponents": {
+    "app-list": "/components/common/appList",
+    "tag": "/components/common/tag",
+    "card": "/components/common/card",
+    "scroll-app-list": "/components/common/scrollAppList"
+  }
+}

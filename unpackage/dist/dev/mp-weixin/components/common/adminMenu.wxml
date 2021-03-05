@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['menuClick',['$0'],['res.name']]]]]}}" class="col-6 d-flex a-center adminMenuItem data-v-60c78e65" bindtap="__e"><text class="{{['ml-5 iconfont font-lg data-v-60c78e65',res.icon]}}" style="{{'color:'+(bgcolor)+';'}}"></text><text class="pl-2 data-v-60c78e65">{{res.name}}</text></view>

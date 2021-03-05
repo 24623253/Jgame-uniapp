@@ -1,0 +1,29 @@
+
+page{
+	background-color: #F0F0F0;
+}
+
+
+.head.data-v-0be17cc6{
+	height: 375rpx;
+}
+.adminHead.data-v-0be17cc6{
+	width: 125rpx;
+	height: 125rpx;
+	border-radius: 50%;
+	background: rgba(234,234,234,0.2);
+}
+.adminHeadImg.data-v-0be17cc6{
+	font-size: 80rpx;
+	border-radius: 50%;
+}
+.sign.data-v-0be17cc6{
+	border: #FFFFFF solid 1px;
+	border-radius: 15rpx;
+	width: 120rpx;
+}
+.more.data-v-0be17cc6{
+	color: #d7d9d7;
+	font-size: 32rpx;
+}
+

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "游戏分类",
+  "usingComponents": {
+    "app-list": "/components/common/appList"
+  }
+}

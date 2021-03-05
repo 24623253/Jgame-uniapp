@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/sponsor/sponsor",
+    "pages/myGame/myGame",
+    "pages/fight/fight",
+    "pages/message/message",
+    "pages/down/down",
+    "pages/search/search",
+    "pages/gameDetails/gameDetails",
+    "pages/gameType/gameType",
+    "pages/login/login",
+    "pages/setting/setting",
+    "pages/gameClass/gameClass"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小J游戏",
+    "navigationBarBackgroundColor": "#4D9AE4",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#B5B5B5",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "找游戏",
+        "iconPath": "static/tabbar/search.png",
+        "selectedIconPath": "static/tabbar/searchSelected.png"
+      },
+      {
+        "pagePath": "pages/fight/fight",
+        "text": "对战",
+        "iconPath": "static/tabbar/duizhan.png",
+        "selectedIconPath": "static/tabbar/duizhanSeleted.png"
+      },
+      {
+        "pagePath": "pages/myGame/myGame",
+        "text": "我的游戏",
+        "iconPath": "static/tabbar/myGame.png",
+        "selectedIconPath": "static/tabbar/myGameSelected.png"
+      },
+      {
+        "pagePath": "pages/sponsor/sponsor",
+        "text": "赞助",
+        "iconPath": "static/tabbar/zanzhu.png",
+        "selectedIconPath": "static/tabbar/zanzhuSelected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "管理",
+        "iconPath": "static/tabbar/my.png",
+        "selectedIconPath": "static/tabbar/mySelected.png"
+      }
+    ]
+  },
+  "permission": {},
+  "usingComponents": {}
+}
