@@ -15,6 +15,16 @@ Jgame游戏平台app(Android)&amp;小程序
 + 后端接口： [Jgame-server](https://github.com/24623253/Jgame-server) 
 + 后台管理页面： [Jgame-uniapp](https://github.com/24623253/Jgame-server) 
 
+## Build Setup
+
+项目下载和运行
+----
+
+- 拉取项目代码
+```bash
+git clone https://github.com/24623253/Jgame-management-web.git
+```
+
 - 环境
 ```
  HBuildX v3.1.2
