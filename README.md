@@ -8,7 +8,7 @@ Jgame游戏平台app(Android)&amp;小程序
 
 - 注：
 ```
-如运行失败或打包失败，注意m anifest.json 配置 DCloud AppID 和 微信小程序 AppID&appsecret
+如运行失败或打包失败，注意 manifest.json 配置 DCloud AppID 和 微信小程序 AppID&appsecret
 ```
 
 ====
