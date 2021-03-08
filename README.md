@@ -22,7 +22,7 @@ Jgame游戏平台app(Android)&amp;小程序
 
 - 拉取项目代码
 ```bash
-git clone https://github.com/24623253/Jgame-management-web.git
+git clone https://github.com/24623253/Jgame-uniapp.git
 ```
 
 - 环境
