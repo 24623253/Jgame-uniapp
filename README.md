@@ -6,6 +6,11 @@ Jgame游戏平台app(Android)&amp;小程序
 第三方微信登录调试均可，逻辑已写好，打包后暂不支持，因缺少微信开放平台的企业认证账号，需要账号移动开发申请后绑定包名。 
 ```
 
+- 注：
+```
+如运行失败或打包失败，注意m anifest.json 配置 DCloud AppID 和 微信小程序 AppID&appsecret
+```
+
 ====
 
 ## J游戏的app端（Android）&小程序端
