@@ -251,8 +251,10 @@
 				uni.getProvider({ // 拉起授权
 					service: 'oauth', // 授权服务
 					success(e) {
-						console.log(e.provider) //  打印支持微信、qq和微博等供应商
-						if (e.provider.indexOf('weixin')) { // 判定微信的授权登录
+						console.log(typeof e.provider) //  打印支持微信、qq和微博等供应商
+						console.log(JSON.stringify(e.provider))
+						if (e.provider.includes('weixin')) { // 判定微信的授权登录
+							console.log(111)
 							uni.login({
 								provider: 'weixin', // 微信
 								success(loginRes) {
