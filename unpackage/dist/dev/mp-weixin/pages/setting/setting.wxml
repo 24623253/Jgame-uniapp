@@ -1,1 +1,0 @@
-<view><text>更多功能正在开发中...</text><view class="position-fixed left-0 bottom-0 right-0 px-3 py-1 border-top bg-white"><button data-event-opts="{{[['tap',[['exit',['$event']]]]]}}" class="footDownBtn font" bindtap="__e">退出账号</button></view></view>

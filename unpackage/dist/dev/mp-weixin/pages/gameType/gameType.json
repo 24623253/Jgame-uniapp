@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "game": "/components/fight/game",
-    "app-list": "/components/common/appList"
-  }
-}

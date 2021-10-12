@@ -1,1 +1,0 @@
-<view class="px-2"><block wx:if="{{userinfo}}"><app-list vue-id="231dc100-1" res="{{applist}}" downloaded="{{true}}" bind:__l="__l"></app-list></block><block wx:else><view class="d-flex j-center mt-5"><text>请先登陆哦~</text></view></block></view>
