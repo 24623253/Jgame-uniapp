@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "下载任务",
-  "usingComponents": {
-    "app-list": "/components/common/appList"
-  }
-}

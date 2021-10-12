@@ -1,6 +1,0 @@
-{
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "admin-menus": "/components/common/adminMenu"
-  }
-}
