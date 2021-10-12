@@ -43,7 +43,9 @@
 					<!-- #ifdef MP-WEIXIN -->
 					
 					<template v-if="item.id==='0'">
-						<button class="loginIconBtn font" :plain="true" hover-class="none" open-type="getUserInfo" @getuserinfo="getUserInfo">
+						<!-- TODO:根据微信开放文档open-type="getUserInfo"自2018-04-15开始不弹出用户授权，自动静默授权。 -->
+						<!-- <button class="loginIconBtn font" :plain="true" hover-class="none" open-type="getUserInfo" @getuserinfo="getUserInfo"> -->
+						<button class="loginIconBtn font" :plain="true" hover-class="none" @click="bindGetUserInfo">
 							<image class=" loginIcon" :src="item.url" mode="widthFix" lazy-load style="width: 80rpx;"></image>
 						</button>
 					</template>
@@ -293,18 +295,82 @@
 				})
 			},
 
-			getUserInfo(e) {
-				this.loading = true
-				this.$wxApi.loading('请稍后...');
-				console.log(e)
-				this.$store.dispatch('WxLogin', e.detail.userInfo).then(res => {
-					this.$wxApi.loading();
-					this.$wxApi.toast('成功登陆');
-					setTimeout(() => {
-						this.loading = false
-						uni.navigateBack()
-					}, 1000)
-				})
+			// getUserInfo(e) {
+			// 	this.loading = true
+			// 	this.$wxApi.loading('请稍后...');
+			// 	console.log(e)
+			// 	this.$store.dispatch('WxLogin', e.detail.userInfo).then(res => {
+			// 		this.$wxApi.loading();
+			// 		this.$wxApi.toast('成功登陆');
+			// 		setTimeout(() => {
+			// 			this.loading = false
+			// 			uni.navigateBack()
+			// 		}, 1000)
+			// 	})
+			// },
+			
+			loginByWeixin(userInfo){
+				console.log(userInfo)
+					this.$store.dispatch('WxLogin', userInfo).then(res => {
+						// this.$wxApi.loading();
+						this.$wxApi.toast('成功登陆');
+						setTimeout(() => {
+							this.loading = false
+							uni.navigateBack()
+						}, 1000)
+					})
+			},
+			
+			bindGetUserInfo(e) {
+			                let _this = this
+							uni.getUserProfile({
+								desc:'weixin',   
+								success:res=>{
+									console.log(res,'授权成功');
+									this.$wxApi.loading('请稍后...');
+									_this.loginByWeixin(res.userInfo)
+								},
+								fail:err=>{
+									console.log(err,'失败授权')
+								}
+							})
+			            },
+			
+			getUserInfo(){
+				uni.getProvider({
+				                      service: 'oauth',
+				                      success: function (res) {
+				                        if (~res.provider.indexOf('weixin')) {
+				                            uni.login({
+				                                provider: 'weixin',
+				                                success: (res2) => {
+				                                    
+				                                    uni.getUserInfo({
+				                                        provider: 'weixin',
+				                                        success: (info) => {//这里请求接口
+				                                            console.log(res2);
+				                                            console.log(info);
+				                                            
+				                                        },
+				                                        fail: () => {
+				                                            uni.showToast({title:"微信登录授权失败",icon:"none"});
+				                                        }
+				                                    })
+				                            
+				                                },
+				                                fail: () => {
+				                                    uni.showToast({title:"微信登录授权失败",icon:"none"});
+				                                }
+				                            })
+				                            
+				                        }else{
+				                            uni.showToast({
+				                                title: '请先安装微信或升级版本',
+				                                icon:"none"
+				                            });
+				                        }
+				                      }
+				                    });
 			}
 
 		}
